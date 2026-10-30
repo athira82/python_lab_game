@@ -1,0 +1,25 @@
+:root{--bg:#f3f6fb;--ink:#14213d;--mute:#5b6783;--card:#fff;--line:#d7dfee;--pri:#0f766e;--xp:#e09f00;--ok:#15803d;--bad:#c2334d;--term:#14213d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+header,.wrap{max-width:920px;margin:0 auto;padding:10px 16px}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px}
+h1{margin:0;font:700 1.6rem ui-rounded,"Trebuchet MS",sans-serif}small{color:var(--mute);font-weight:400;font-size:.6em}
+#stats{font-weight:600;min-width:220px}.meter{height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:4px}
+.meter i{display:block;height:100%;background:var(--xp)}
+.status{background:#fff3cd;border-radius:8px}.status[hidden]{display:none}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+button,select{font:inherit;background:#e6ecf7;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 14px;cursor:pointer}
+button:hover:not(:disabled){background:#d5def0}button:disabled{opacity:.5;cursor:wait}
+button.on{background:var(--pri);color:#fff;border-color:var(--pri)}button:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--xp);outline-offset:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:0 0 14px}
+.card h3,.card h2{margin-top:0}p{max-width:70ch}
+pre,textarea{font:14px/1.5 ui-monospace,Consolas,monospace;background:var(--term);color:#e8eefc;border:0;border-radius:8px;padding:10px;width:100%;margin:6px 0}
+pre{white-space:pre-wrap;overflow-x:auto}textarea.ed{min-height:200px;tab-size:4}textarea.in{min-height:60px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.xp{color:var(--xp);font-size:.8em}
+.ok{color:var(--ok)}.bad{color:var(--bad)}.win{background:#e6f6ec;border-radius:8px;padding:10px 14px}
+.boxes{display:flex;gap:6px;flex-wrap:wrap;min-height:40px}.boxes span{padding:6px 12px;border-radius:6px;background:var(--line)}
+.boxes .on{background:#9bd3cc}.boxes .cur{background:var(--pri);color:#fff;font-weight:700}
+.demo{display:flex;gap:14px;flex-wrap:wrap}.demo input{width:72px;border:1px solid var(--line);border-radius:6px;padding:4px;font:inherit}
+footer{color:var(--mute);font-size:.9rem}
+@media(max-width:600px){h1{font-size:1.3rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
